@@ -1,4 +1,4 @@
-package com.example.myfirstjava5;
+package com.example.myfirstjava5.mapper;
 
 public class User {
     private String name;

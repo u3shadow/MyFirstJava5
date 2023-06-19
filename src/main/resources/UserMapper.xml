@@ -3,10 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.myfirstjava5.mapper.UserMapper">
-    <select id="queryUserList" resultType="com.example.myfirstjava5.User">
+    <select id="queryUserList" resultType="com.example.myfirstjava5.mapper.User">
         select * from user
     </select>
-    <insert id="addUser" parameterType="com.example.myfirstjava5.User">
-        insert into user(name,age) values (#{name},#{age})
-    </insert>
 </mapper>

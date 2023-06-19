@@ -13,7 +13,6 @@ public class Controller {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
     public String hello(){
-
         return "hello接口调用"+userMapper.queryUserList().toString();
     }
 }
